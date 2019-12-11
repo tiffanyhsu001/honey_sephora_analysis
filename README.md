@@ -3,14 +3,14 @@ This notebook contains general analysis on Honey's product performance based off
 
 ## Topics Covered & Conclusions
 
-### Feature Engineering
+### 1. Feature Engineering
 1. Time series variables created (month, day of week)
 2. Commission percentage, save cost ratio
   
-### Exploratory Analysis
+### 2. Exploratory Analysis
 Before any analysis, I discovered that Honey's daily tracking measure (in this dataset) is inaccurate. While it may correctly collect all the code use frequencies overall (or by month), on a daily level, they are randomly being pushed to specific days of the month. It is highly unlikely that the first 3 days of a month will take up 99% of code uses, and immediately drop to near 0 values for the rest of the month. Similar behaviors in October & November further my suspicion. Additionally, historically in the retail world, Black Friday usually sets records online & in foot traffic, but there is no indication of such behavior in the data.
 
-### Business Impact & Reach Analysis
+### 3. Business Impact & Reach Analysis
 #### Commission change over time, on a monthly level 
 Even though the most codes were used in November, October had the highest average commission, meaning that in October, Honey on average made more money off each user's order. Unsurprisingly, November had the highest number of coupon code users, because that is the peak of the holiday shopping period.
 
